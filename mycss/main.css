@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mountains of Christmas', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: var(--dark-green);
+    background: var(--wine-red);
+
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    border: 3px navy solid;
+    color: white;
+    text-shadow: 4px 4px navy;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+span{
+    font-family: festive;
+}
+h1{
+    color: white;
+     font-size: 2.5rem;
+     background: rgba(1,1,22,.5);
+     border-radius: 25px;
+     padding: .5em;
+     
+    
+}
+
+.affirmation {
+    font-size: 2.5rem;
+    margin: 0;
+    
+}
+
+.timer {
+    font-size: 100px;
+    margin: 0.5em;
+}
+
+button {
+    border: none;
+    font-family: 'Mountains of Christmas', cursive;
+    background-color: #599F2E;
+    color: var(--snow);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 1.2rem
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.03)
+}
+#pause-btn,
+#reset-btn{
+    display: none;
+   
+}
+.btn-container{
+    display:flex;
+  
+    
+}
+#reset-btn{
+     background: var(--wine-red);
+}
+#pause-btn,
+#play-btn{
+    margin-right:1em; 
+    
+}
+
+#play-btn{
+    display: none;
+}
